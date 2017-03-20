@@ -1,0 +1,722 @@
+
+/* line 11, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+body.menu-opened .sc-loading {
+  left: calc(50% + 5.41667em);
+}
+/* line 17, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+body.with-menu #header-bar .logo {
+  padding-left: 0;
+}
+
+/* line 24, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon {
+  position: relative;
+  width: 1.875em;
+  height: 1.875em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+/* line 30, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon span {
+  height: .125em;
+  width: 1.5em;
+  background-color: #fff;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 36, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon span:nth-of-type(1) {
+  top: .375em;
+  left: .1875em;
+}
+/* line 37, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon span:nth-of-type(2) {
+  top: .8125em;
+  left: .1875em;
+}
+/* line 38, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon span:nth-of-type(3) {
+  top: 1.25em;
+  left: .1875em;
+}
+/* line 40, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon.back {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 43, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon.back span:nth-of-type(1) {
+  top: .5em;
+  left: 0;
+  width: 1em;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 49, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon.back span:nth-of-type(2) {
+  top: .8125em;
+  left: .1875em;
+  width: 1.3em;
+}
+/* line 54, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon.back span:nth-of-type(3) {
+  top: 1.125em;
+  left: 0;
+  width: 1em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 62, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon.close {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 66, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon.close span:nth-of-type(1), .menu-icon.close span:nth-of-type(2) {
+  top: .875em;
+  left: .1875em;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 71, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.menu-icon.close span:nth-of-type(3) {
+  top: .875em;
+  left: .1875em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 80, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar {
+  height: 3.75em;
+  width: 100%;
+  top: 0;
+  background-color: #244560;
+  position: fixed;
+  z-index: 100;
+}
+/* line 87, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .menu-action {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 4em;
+  -ms-flex: 0 0 4em;
+  flex: 0 0 4em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* line 97, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .logo {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10em;
+  -ms-flex: 0 0 10em;
+  flex: 0 0 10em;
+  padding-left: .6em;
+}
+/* line 103, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .logo img {
+  display: block;
+}
+/* line 105, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .actions {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+/* line 117, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .actions .actions-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 119, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .actions .actions-icon i {
+  font-size: 1.6em;
+}
+/* line 120, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .actions .actions-icon:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+/* line 124, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#header-bar .actions .actions-icon.active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 132, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page {
+  padding-top: 3.75em;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* line 142, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar {
+  font-size: 0.8125em;
+  position: relative;
+  z-index: 99;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 0;
+  -ms-flex: 0 0 0;
+  flex: 0 0 0;
+}
+/* line 150, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar, #main-page #side-bar a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+/* line 156, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar.opened #side-bar-content {
+  left: 0;
+}
+/* line 161, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-bar-content {
+  top: 4.61538em;
+  right: 0;
+  bottom: 0;
+  left: -20em;
+  width: 20em;
+  background-color: #244560;
+  position: fixed;
+  overflow-y: auto;
+}
+/* line 172, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 174, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .photo {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 21%;
+  -ms-flex: 0 0 21%;
+  flex: 0 0 21%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1.1em 0;
+}
+/* line 184, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .photo div {
+  width: 3.3em;
+  height: 3.3em;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+}
+/* line 190, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .photo div.no-photo {
+  text-align: center;
+  padding-top: 0.3em;
+}
+/* line 193, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .photo div.no-photo i {
+  font-size: 2.5em;
+}
+/* line 197, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .info {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 79%;
+  -ms-flex: 0 0 79%;
+  flex: 0 0 79%;
+  padding-left: 1em;
+  font-size: .85em;
+  line-height: 1.7em;
+}
+/* line 205, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .info .name {
+  text-transform: uppercase;
+}
+/* line 207, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .actions {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+/* line 212, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .actions a {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  text-align: center;
+  padding: .8em 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 221, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .actions a:hover {
+  color: #fff;
+}
+/* line 222, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .actions a:nth-of-type(1):hover {
+  background-color: rgba(51, 122, 183, 0.5);
+}
+/* line 223, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #perfil .actions a:nth-of-type(2):hover {
+  background-color: rgba(199, 48, 48, 0.6);
+}
+/* line 228, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 230, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .selected {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+/* line 235, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .selected .logo {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 18%;
+  -ms-flex: 0 0 18%;
+  flex: 0 0 18%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1em 0;
+}
+/* line 245, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .selected .logo div {
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  background-size: contain;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: 0 0 0 1px white;
+  -moz-box-shadow: 0 0 0 1px white;
+  box-shadow: 0 0 0 1px white;
+}
+/* line 256, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .selected .name {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 82%;
+  -ms-flex: 0 0 82%;
+  flex: 0 0 82%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 1.3em 0 .65em;
+  text-transform: uppercase;
+}
+/* line 267, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .selected .name i {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 269, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .selected:hover {
+  color: #fff;
+}
+/* line 273, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+/* line 278, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: .2em 1.5em;
+  position: relative;
+}
+/* line 282, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search input {
+  display: block;
+  border: none;
+  border-radius: .3em;
+  box-shadow: none;
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  padding: .9em 1.5em .9em 0;
+}
+/* line 291, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search input:focus, #main-page #side-bar #condominio .lista .search input:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/* line 292, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search input::-webkit-input-placeholder {
+  color: #fff;
+}
+/* line 293, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search input:-moz-placeholder {
+  color: #fff;
+}
+/* line 294, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search input::-moz-placeholder {
+  color: #fff;
+}
+/* line 295, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search input:-ms-input-placeholder {
+  color: #fff;
+}
+/* line 297, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista .search > i {
+  position: absolute;
+  right: 1.3em;
+  top: calc(50% - .5em);
+}
+/* line 303, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista ul {
+  max-height: 16.5em;
+  overflow-y: auto;
+}
+/* line 307, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista ul li a {
+  display: block;
+  padding: .8em 1.6em;
+  text-transform: uppercase;
+}
+/* line 311, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista ul li a:hover {
+  color: #fff;
+}
+/* line 313, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #condominio .lista ul li:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 319, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+/* line 324, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+/* line 326, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li:nth-of-type(1) {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+/* line 327, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li > a, #main-page #side-bar #side-menu > ul > li > div {
+  padding: 1em 1.6em;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+/* line 330, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li > a:hover, #main-page #side-bar #side-menu > ul > li > div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+  color: #fff;
+}
+/* line 335, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li > a i.icon-menu, #main-page #side-bar #side-menu > ul > li > div i.icon-menu {
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  margin-right: .5em;
+  background: transparent;
+  border-radius: 100%;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 346, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li > a.active, #main-page #side-bar #side-menu > ul > li > a.opened, #main-page #side-bar #side-menu > ul > li > div.active, #main-page #side-bar #side-menu > ul > li > div.opened {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+/* line 350, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li > a.active i.icon-menu, #main-page #side-bar #side-menu > ul > li > div.active i.icon-menu {
+  background: #fff;
+  color: #1D374D;
+}
+/* line 355, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li > div {
+  position: relative;
+}
+/* line 357, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li > div .icon-filhos {
+  font-size: .7em;
+  padding: 0;
+  position: absolute;
+  right: 2em;
+  top: calc(50% - .35em);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 368, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li ul li a {
+  padding: .9em 1.5em;
+}
+/* line 370, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li ul li a i {
+  font-size: .5em;
+  margin-left: 1.7em;
+  padding-right: 1.5em;
+}
+/* line 375, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+  color: #fff;
+}
+/* line 380, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li ul li a.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+/* line 386, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #side-bar #side-menu > ul > li ul.opened {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 393, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content {
+  position: static;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* line 399, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar {
+  z-index: 97;
+  position: relative;
+}
+/* line 402, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar #top-bar-content {
+  padding: .6em .8em;
+  background-color: #f3f3f4;
+}
+/* line 405, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar #top-bar-content.fix {
+  position: fixed;
+  top: 3.75em;
+  right: 0;
+  left: 0;
+}
+/* line 411, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar #top-bar-content.fixed {
+  -webkit-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+}
+/* line 414, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar #top-bar-content:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+/* line 420, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar #top-bar-filter {
+  position: relative;
+  margin: 0 -0.8em;
+}
+/* line 423, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar #top-bar-filter > * {
+  position: absolute;
+  top: .6em;
+  left: 0;
+  right: 0;
+  background-color: #ECECEE;
+  border-top: 1px solid #DBDBDC;
+  -webkit-box-shadow: 0 0.8em 1.6em rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0.8em 1.6em rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.8em 1.6em rgba(0, 0, 0, 0.35);
+}
+/* line 432, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #top-bar #top-bar-filter hr {
+  border-top-color: #C6C9CD;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+}
+/* line 440, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+#main-page #main-content #breadcrumb {
+  color: #7d858c;
+  font-size: 0.8em;
+  padding: 0 1em .6em;
+  background-color: #f3f3f4;
+  border-bottom: 1px solid #D7D9DB;
+}
+
+/* line 450, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.sc-notify-center {
+  position: relative;
+}
+/* line 452, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.sc-notify-center .sc-notify-icon {
+  height: 3.75em;
+}
+/* line 453, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.sc-notify-center .sc-notify-notifications {
+  line-height: normal;
+  max-height: 28em;
+  width: 20em;
+  position: absolute;
+  right: 0;
+  overflow-y: auto;
+  border-bottom-right-radius: .4em;
+  border-bottom-left-radius: .4em;
+}
+/* line 462, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.sc-notify-center .sc-notify-notifications .sc-notify-list {
+  text-shadow: none;
+}
+/* line 463, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.sc-notify-center .sc-notify-notifications .sc-notify-img {
+  width: 42px;
+  float: left;
+  text-align: center;
+}
+/* line 468, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+.sc-notify-center .sc-notify-notifications .sc-notify-item {
+  overflow: auto;
+  line-height: normal;
+  display: block;
+  text-decoration: none;
+}
+
+@media (min-width: 1028px) {
+  /* line 480, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .menu-opened #main-page #main-content #top-bar #top-bar-content.fix {
+    left: 16.25em;
+  }
+  /* line 482, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .menu-opened .wysiwyg-toolbar.fix {
+    left: 16.25em;
+  }
+
+  /* line 486, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  #header-bar, #top-bar, #top-bar-content, #side-bar, #side-bar-content {
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+
+  /* line 491, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  #main-page #side-bar.opened {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20em;
+    -ms-flex: 0 0 20em;
+    flex: 0 0 20em;
+  }
+
+  /* line 500, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .scrollbar::-webkit-scrollbar {
+    width: .6em;
+  }
+  /* line 501, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: .8em;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  /* line 502, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: .8em;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  /* line 503, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .scrollbar::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+@media (max-width: 1027px) {
+  /* line 508, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  body.menu-opened {
+    overflow: hidden;
+  }
+
+  /* line 511, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  #main-page #side-bar #side-bar-content {
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+  /* line 515, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  #main-page .overlay-menu {
+    z-index: 98;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(50, 100, 143, 0.2);
+  }
+}
+@media (max-width: 479px) {
+  /* line 528, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .sc-notify-center {
+    position: static;
+  }
+  /* line 530, /erp/app/assets/stylesheets/seucondominio/erp/menu.scss */
+  .sc-notify-center .sc-notify-notifications {
+    width: auto;
+    right: .5em;
+    left: .5em;
+  }
+}
